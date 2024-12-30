@@ -119,3 +119,32 @@
 .longBreak {
   background-color: rgb(10, 67, 117);
 }
+
+@media screen and (max-width: 600px) {
+  .timer {
+    width: 300px;
+    height: 300px;
+  }
+
+  .time {
+    font-size: 2rem;
+  }
+
+  .controlButton {
+    width: 40px;
+    height: 40px;
+  }
+
+  .icon.square {
+    transform: scale(0.7);
+  }
+
+  .labels {
+    font-size: 0.5rem;
+    padding: 7px;
+  }
+
+  .session {
+    font-size: 0.7rem;
+  }
+}

@@ -23,10 +23,21 @@
   display: flex;
   gap: 10px;
   justify-content: center;
+  align-items: center;
 }
 
 .content {
   display: flex;
   flex-direction: column;
   gap: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .settings {
+    transform: scale(0.8);
+  }
 }

@@ -188,7 +188,11 @@ function Timer({ settings }) {
           }}
           className={`${styles.controlButton} ${styles[cycle]}`}
         >
-          <Icon className={styles.icon} path={mdiSquare} size={2} />
+          <Icon
+            className={`${styles.icon} ${styles.square}`}
+            path={mdiSquare}
+            size={2}
+          />
         </button>
         <button
           onClick={() => {
