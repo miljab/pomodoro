@@ -1,0 +1,32 @@
+.settings {
+  background-color: inherit;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  color: white;
+  transition: transform 1s;
+}
+
+.icon:hover {
+  transform: rotate(180deg);
+}
+
+.title {
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}

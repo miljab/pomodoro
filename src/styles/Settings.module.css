@@ -1,0 +1,64 @@
+.settingsContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  color: black;
+}
+
+.settings {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 280px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.input input {
+  width: 200px;
+}
+
+.slider {
+  display: flex;
+  gap: 10px;
+}
+
+.closeButton {
+  width: 100px;
+  height: 40px;
+  margin: 10px auto;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border: 4px solid rgb(38, 128, 207);
+  border-radius: 12px;
+  color: rgb(38, 128, 207);
+  background-color: white;
+  cursor: pointer;
+}
+
+.closeButton:hover {
+  background-color: rgb(38, 128, 207);
+  color: white;
+}

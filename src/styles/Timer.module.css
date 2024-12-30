@@ -1,0 +1,121 @@
+.controlButton {
+  background-color: rgb(49, 99, 143);
+  border: none;
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 2px 8px 0px rgb(49, 49, 49);
+  border-radius: 6px;
+}
+
+.controls {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  color: white;
+}
+
+.timer {
+  width: 520px;
+  height: 520px;
+  /* display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column; */
+  display: grid;
+  grid-template-rows: 2fr 1fr 2fr;
+  border-radius: 50%;
+  box-shadow: 8px 8px 16px 0px rgb(39, 39, 39);
+}
+
+.time {
+  font-size: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: fit-content;
+  margin: auto;
+  background-color: rgb(66, 113, 153);
+  box-shadow: 2px 2px 8px 0px rgb(49, 49, 49);
+  border-radius: 6px;
+  padding: 10px; */
+}
+
+.labels {
+  display: flex;
+  gap: 20px;
+  /* background-color: rgb(49, 99, 143); */
+  box-shadow: 2px 2px 8px 0px rgb(49, 49, 49);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.labels.pomodoro,
+.controlButton.pomodoro {
+  background-color: rgb(156, 61, 61);
+}
+
+.labels.shortBreak,
+.controlButton.shortBreak {
+  background-color: rgb(71, 121, 136);
+}
+
+.labels.longBreak,
+.controlButton.longBreak {
+  background-color: rgb(32, 87, 134);
+}
+
+.controlButton.pomodoro:hover {
+  background-color: rgb(177, 85, 85);
+}
+
+.controlButton.shortBreak:hover {
+  background-color: rgb(80, 133, 150);
+}
+
+.controlButton.longBreak:hover {
+  background-color: rgb(44, 101, 151);
+}
+
+.separator {
+  font-weight: 900;
+}
+
+.activeLabel {
+  font-weight: 900;
+  color: #fff;
+}
+
+.inactiveLabel {
+  color: #fff;
+  opacity: 0.5;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.pomodoro {
+  background-color: rgb(141, 43, 43);
+}
+
+.shortBreak {
+  background-color: rgb(20, 113, 141);
+}
+
+.longBreak {
+  background-color: rgb(10, 67, 117);
+}
