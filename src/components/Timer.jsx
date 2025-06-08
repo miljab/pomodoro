@@ -1,7 +1,7 @@
 import styles from "../styles/Timer.module.css";
 import { useEffect, useState, useRef } from "react";
 import Icon from "@mdi/react";
-import { mdiPlay, mdiPause, mdiSquare, mdiReplay } from "@mdi/js";
+import { mdiPlay, mdiPause, mdiSkipForward, mdiReplay } from "@mdi/js";
 import clickSound from "../assets/click.mp3";
 import notificationSound from "../assets/notification.mp3";
 import useSound from "use-sound";
@@ -122,7 +122,7 @@ function Timer({ settings }) {
     if (isActive) {
       const interval = setInterval(() => {
         tick();
-      }, 500);
+      }, 200);
       return () => clearInterval(interval);
     }
   }, [isActive]);
@@ -184,13 +184,13 @@ function Timer({ settings }) {
         <button
           onClick={() => {
             playClick();
-            resetTimer();
+            handleCycleEnd();
           }}
           className={`${styles.controlButton} ${styles[cycle]}`}
         >
           <Icon
             className={`${styles.icon} ${styles.square}`}
-            path={mdiSquare}
+            path={mdiSkipForward}
             size={2}
           />
         </button>
